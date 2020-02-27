@@ -1,2 +1,2 @@
 # Traktor
-SwiftUI Movie tracker app
+Swift Movie tracker app
