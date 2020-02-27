@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0500B871576371D18022A6FD /* Pods_Traktor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85FF6B806FFAAB27CE8909C /* Pods_Traktor.framework */; };
+		13B10B936EDD7FF7F15E7873 /* Pods_TraktorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFED5045249695FF21852C0 /* Pods_TraktorTests.framework */; };
+		6E1DFBA72378A4C200721138 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1DFBA62378A4C200721138 /* Strings.swift */; };
+		6E363C5422C129B2008083D6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E363C5322C129B2008083D6 /* SettingsViewController.swift */; };
+		6E363C5622C12A58008083D6 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E363C5522C12A58008083D6 /* SearchResultsViewController.swift */; };
+		6E363C5822C12E69008083D6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E363C5722C12E69008083D6 /* MainViewController.swift */; };
+		6E363C5A22C12F68008083D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E363C5922C12F68008083D6 /* Main.storyboard */; };
+		6E363C5C22C17617008083D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E363C5B22C17617008083D6 /* GoogleService-Info.plist */; };
+		6E363C5E22C179CA008083D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E363C5D22C179CA008083D6 /* LaunchScreen.storyboard */; };
+		6E363C6022C1EEEC008083D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E363C5F22C1EEEC008083D6 /* LoginViewController.swift */; };
+		6E363C6222C1F05F008083D6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E363C6122C1F05F008083D6 /* Login.storyboard */; };
+		6E363C6422C28E00008083D6 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E363C6322C28E00008083D6 /* ExploreViewController.swift */; };
+		6E363C6622C420DD008083D6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E363C6522C420DD008083D6 /* ProfileViewController.swift */; };
+		6E3D74E222D0942D00FFAB5E /* TVCollage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D74E122D0942D00FFAB5E /* TVCollage.png */; };
+		6E4A917E22D08AF30057C406 /* Trakt.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4A917D22D08AF30057C406 /* Trakt.png */; };
+		6E5CE8DE238177930097D06B /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5CE8DD238177930097D06B /* URLs.swift */; };
+		6EB3F50E2378A56D0028A02A /* SeasonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3F50D2378A56D0028A02A /* SeasonsCell.swift */; };
+		6EB3F5102378A5DC0028A02A /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3F50F2378A5DC0028A02A /* SearchCell.swift */; };
+		6EB3F5122378A6230028A02A /* ShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3F5112378A6230028A02A /* ShowCell.swift */; };
+		6EB3F514237B3C020028A02A /* episodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3F513237B3C020028A02A /* episodeCell.swift */; };
+		6EB3F516237B3C7A0028A02A /* SeasonEpisodesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3F515237B3C7A0028A02A /* SeasonEpisodesTableViewController.swift */; };
+		6EB8CC5322BAC9D60021FB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8CC5222BAC9D60021FB4D /* AppDelegate.swift */; };
+		6EB8CC5B22BAC9D60021FB4D /* Traktor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8CC5922BAC9D60021FB4D /* Traktor.xcdatamodeld */; };
+		6EB8CC5D22BAC9D70021FB4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB8CC5C22BAC9D70021FB4D /* Assets.xcassets */; };
+		6EB8CC6B22BAC9D70021FB4D /* TraktorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8CC6A22BAC9D70021FB4D /* TraktorTests.swift */; };
+		6EB8CC7622BAC9D70021FB4D /* TraktorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8CC7522BAC9D70021FB4D /* TraktorUITests.swift */; };
+		6EB8CC8522BACA360021FB4D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8CC8422BACA360021FB4D /* Logger.swift */; };
+		6EB8CC8822BACA8D0021FB4D /* AlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8CC8722BACA8D0021FB4D /* AlertHandler.swift */; };
+		6EB8CC8A22BACAAA0021FB4D /* ShakeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8CC8922BACAAA0021FB4D /* ShakeHandler.swift */; };
+		6EB8CC8C22BACAC30021FB4D /* PresentViewControllerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8CC8B22BACAC30021FB4D /* PresentViewControllerHandler.swift */; };
+		6EB8CC8E22BACAD90021FB4D /* SpinnerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8CC8D22BACAD90021FB4D /* SpinnerHandler.swift */; };
+		6EB8CC9022BACB030021FB4D /* ReachabilityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8CC8F22BACB030021FB4D /* ReachabilityHandler.swift */; };
+		6EB8CC9622BACED70021FB4D /* DeveloperSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8CC9522BACED70021FB4D /* DeveloperSettingsViewController.swift */; };
+		6EB8CC9822BACEEF0021FB4D /* Developer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB8CC9722BACEEF0021FB4D /* Developer.storyboard */; };
+		6EC3F54A22C7FF0D00764A97 /* ShowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3F54922C7FF0D00764A97 /* ShowDetailsViewController.swift */; };
+		6ECC102822D24BCE004BB8F1 /* no-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC102722D24BCE004BB8F1 /* no-image.png */; };
+		6ECC102A22D8EDD7004BB8F1 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC102922D8EDD7004BB8F1 /* blank.png */; };
+		6ECC102D22DA0B5F004BB8F1 /* ShowTrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC102C22DA0B5F004BB8F1 /* ShowTrailerViewController.swift */; };
+		6ECC102F22DA41E3004BB8F1 /* MyShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC102E22DA41E3004BB8F1 /* MyShowsViewController.swift */; };
+		6ECC103122DCDC74004BB8F1 /* StringImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC103022DCDC74004BB8F1 /* StringImageGenerator.swift */; };
+		6ECC103422DE2F3F004BB8F1 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC103322DE2F3F004BB8F1 /* Show.swift */; };
+		6EF097D422CD2E720057FFB4 /* blankProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EF097D322CD2E720057FFB4 /* blankProfile.png */; };
+		A25D49CF5F6621601DB4CD77 /* Pods_TraktorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436FE549C29F798575DB30A7 /* Pods_TraktorUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EB8CC6722BAC9D70021FB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EB8CC4722BAC9D60021FB4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EB8CC4E22BAC9D60021FB4D;
+			remoteInfo = Traktor;
+		};
+		6EB8CC7222BAC9D70021FB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EB8CC4722BAC9D60021FB4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EB8CC4E22BAC9D60021FB4D;
+			remoteInfo = Traktor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BFED5045249695FF21852C0 /* Pods_TraktorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraktorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		436FE549C29F798575DB30A7 /* Pods_TraktorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraktorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		462F629016DDC00D733588A2 /* Pods-TraktorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraktorTests.debug.xcconfig"; path = "Target Support Files/Pods-TraktorTests/Pods-TraktorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		476B792D9FD754D6725C56A2 /* Pods-Traktor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traktor.release.xcconfig"; path = "Target Support Files/Pods-Traktor/Pods-Traktor.release.xcconfig"; sourceTree = "<group>"; };
+		4D47BDE2F882E19ACC218874 /* Pods-TraktorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraktorUITests.debug.xcconfig"; path = "Target Support Files/Pods-TraktorUITests/Pods-TraktorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DCDBAB4D9E6B419096D1616 /* Pods-TraktorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraktorTests.release.xcconfig"; path = "Target Support Files/Pods-TraktorTests/Pods-TraktorTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E1DFBA62378A4C200721138 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		6E363C5322C129B2008083D6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6E363C5522C12A58008083D6 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		6E363C5722C12E69008083D6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6E363C5922C12F68008083D6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6E363C5B22C17617008083D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6E363C5D22C179CA008083D6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E363C5F22C1EEEC008083D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6E363C6122C1F05F008083D6 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		6E363C6322C28E00008083D6 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		6E363C6522C420DD008083D6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6E3D74E122D0942D00FFAB5E /* TVCollage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TVCollage.png; sourceTree = "<group>"; };
+		6E4A917D22D08AF30057C406 /* Trakt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trakt.png; sourceTree = "<group>"; };
+		6E5CE8DD238177930097D06B /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		6EB3F50D2378A56D0028A02A /* SeasonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsCell.swift; sourceTree = "<group>"; };
+		6EB3F50F2378A5DC0028A02A /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		6EB3F5112378A6230028A02A /* ShowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCell.swift; sourceTree = "<group>"; };
+		6EB3F513237B3C020028A02A /* episodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = episodeCell.swift; sourceTree = "<group>"; };
+		6EB3F515237B3C7A0028A02A /* SeasonEpisodesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonEpisodesTableViewController.swift; sourceTree = "<group>"; };
+		6EB8CC4F22BAC9D60021FB4D /* Traktor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traktor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB8CC5222BAC9D60021FB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6EB8CC5A22BAC9D60021FB4D /* Traktor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Traktor.xcdatamodel; sourceTree = "<group>"; };
+		6EB8CC5C22BAC9D70021FB4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6EB8CC6122BAC9D70021FB4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB8CC6622BAC9D70021FB4D /* TraktorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraktorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB8CC6A22BAC9D70021FB4D /* TraktorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraktorTests.swift; sourceTree = "<group>"; };
+		6EB8CC6C22BAC9D70021FB4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB8CC7122BAC9D70021FB4D /* TraktorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraktorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB8CC7522BAC9D70021FB4D /* TraktorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraktorUITests.swift; sourceTree = "<group>"; };
+		6EB8CC7722BAC9D70021FB4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB8CC8422BACA360021FB4D /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		6EB8CC8722BACA8D0021FB4D /* AlertHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHandler.swift; sourceTree = "<group>"; };
+		6EB8CC8922BACAAA0021FB4D /* ShakeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeHandler.swift; sourceTree = "<group>"; };
+		6EB8CC8B22BACAC30021FB4D /* PresentViewControllerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewControllerHandler.swift; sourceTree = "<group>"; };
+		6EB8CC8D22BACAD90021FB4D /* SpinnerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerHandler.swift; sourceTree = "<group>"; };
+		6EB8CC8F22BACB030021FB4D /* ReachabilityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityHandler.swift; sourceTree = "<group>"; };
+		6EB8CC9522BACED70021FB4D /* DeveloperSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperSettingsViewController.swift; sourceTree = "<group>"; };
+		6EB8CC9722BACEEF0021FB4D /* Developer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Developer.storyboard; sourceTree = "<group>"; };
+		6EC3F54922C7FF0D00764A97 /* ShowDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsViewController.swift; sourceTree = "<group>"; };
+		6ECC102722D24BCE004BB8F1 /* no-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-image.png"; sourceTree = "<group>"; };
+		6ECC102922D8EDD7004BB8F1 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
+		6ECC102C22DA0B5F004BB8F1 /* ShowTrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTrailerViewController.swift; sourceTree = "<group>"; };
+		6ECC102E22DA41E3004BB8F1 /* MyShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShowsViewController.swift; sourceTree = "<group>"; };
+		6ECC103022DCDC74004BB8F1 /* StringImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringImageGenerator.swift; sourceTree = "<group>"; };
+		6ECC103322DE2F3F004BB8F1 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		6EF097D322CD2E720057FFB4 /* blankProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blankProfile.png; sourceTree = "<group>"; };
+		BC38AED1CA25375E4ABDC3DF /* Pods-TraktorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraktorUITests.release.xcconfig"; path = "Target Support Files/Pods-TraktorUITests/Pods-TraktorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C85FF6B806FFAAB27CE8909C /* Pods_Traktor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Traktor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E2923482DF0B8113D8D112 /* Pods-Traktor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traktor.debug.xcconfig"; path = "Target Support Files/Pods-Traktor/Pods-Traktor.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EB8CC4C22BAC9D60021FB4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0500B871576371D18022A6FD /* Pods_Traktor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB8CC6322BAC9D70021FB4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B10B936EDD7FF7F15E7873 /* Pods_TraktorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB8CC6E22BAC9D70021FB4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25D49CF5F6621601DB4CD77 /* Pods_TraktorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E1DFBA82378A53800721138 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				6EB3F50D2378A56D0028A02A /* SeasonsCell.swift */,
+				6EB3F50F2378A5DC0028A02A /* SearchCell.swift */,
+				6EB3F5112378A6230028A02A /* ShowCell.swift */,
+				6EB3F513237B3C020028A02A /* episodeCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		6E5CE8DF2381A6640097D06B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6E363C5F22C1EEEC008083D6 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6E5CE8E02381A66B0097D06B /* Developer */ = {
+			isa = PBXGroup;
+			children = (
+				6EB8CC9522BACED70021FB4D /* DeveloperSettingsViewController.swift */,
+			);
+			path = Developer;
+			sourceTree = "<group>";
+		};
+		6E5CE8E12381A6700097D06B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6E363C6322C28E00008083D6 /* ExploreViewController.swift */,
+				6E363C5722C12E69008083D6 /* MainViewController.swift */,
+				6ECC102E22DA41E3004BB8F1 /* MyShowsViewController.swift */,
+				6E363C6522C420DD008083D6 /* ProfileViewController.swift */,
+				6E363C5522C12A58008083D6 /* SearchResultsViewController.swift */,
+				6EB3F515237B3C7A0028A02A /* SeasonEpisodesTableViewController.swift */,
+				6E363C5322C129B2008083D6 /* SettingsViewController.swift */,
+				6EC3F54922C7FF0D00764A97 /* ShowDetailsViewController.swift */,
+				6ECC102C22DA0B5F004BB8F1 /* ShowTrailerViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6EB8CC4622BAC9D60021FB4D = {
+			isa = PBXGroup;
+			children = (
+				6EB8CC5122BAC9D60021FB4D /* Traktor */,
+				6EB8CC6922BAC9D70021FB4D /* TraktorTests */,
+				6EB8CC7422BAC9D70021FB4D /* TraktorUITests */,
+				6EB8CC5022BAC9D60021FB4D /* Products */,
+				D470BBB457A5C3542474B6D5 /* Pods */,
+				90A679F3AC49D6F28D6E4EBE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6EB8CC5022BAC9D60021FB4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EB8CC4F22BAC9D60021FB4D /* Traktor.app */,
+				6EB8CC6622BAC9D70021FB4D /* TraktorTests.xctest */,
+				6EB8CC7122BAC9D70021FB4D /* TraktorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EB8CC5122BAC9D60021FB4D /* Traktor */ = {
+			isa = PBXGroup;
+			children = (
+				6EB8CC5C22BAC9D70021FB4D /* Assets.xcassets */,
+				6EB8CC8322BACA100021FB4D /* Appcore */,
+				6E1DFBA82378A53800721138 /* CustomCells */,
+				6EB8CC9222BACB2F0021FB4D /* Data */,
+				6EB8CC8622BACA690021FB4D /* Handlers */,
+				6EF097D222CD2E480057FFB4 /* Images */,
+				6ECC103222DE2F26004BB8F1 /* Model */,
+				6EB8CC9122BACB190021FB4D /* Plists */,
+				6EB8CC9322BACB410021FB4D /* Storyboards */,
+				6EB8CC9422BACB620021FB4D /* ViewControllers */,
+			);
+			path = Traktor;
+			sourceTree = "<group>";
+		};
+		6EB8CC6922BAC9D70021FB4D /* TraktorTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EB8CC6A22BAC9D70021FB4D /* TraktorTests.swift */,
+				6EB8CC6C22BAC9D70021FB4D /* Info.plist */,
+			);
+			path = TraktorTests;
+			sourceTree = "<group>";
+		};
+		6EB8CC7422BAC9D70021FB4D /* TraktorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6EB8CC7522BAC9D70021FB4D /* TraktorUITests.swift */,
+				6EB8CC7722BAC9D70021FB4D /* Info.plist */,
+			);
+			path = TraktorUITests;
+			sourceTree = "<group>";
+		};
+		6EB8CC8322BACA100021FB4D /* Appcore */ = {
+			isa = PBXGroup;
+			children = (
+				6EB8CC5222BAC9D60021FB4D /* AppDelegate.swift */,
+				6EB8CC8422BACA360021FB4D /* Logger.swift */,
+			);
+			path = Appcore;
+			sourceTree = "<group>";
+		};
+		6EB8CC8622BACA690021FB4D /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				6E5CE8DD238177930097D06B /* URLs.swift */,
+				6E1DFBA62378A4C200721138 /* Strings.swift */,
+				6EB8CC8722BACA8D0021FB4D /* AlertHandler.swift */,
+				6EB8CC8922BACAAA0021FB4D /* ShakeHandler.swift */,
+				6EB8CC8B22BACAC30021FB4D /* PresentViewControllerHandler.swift */,
+				6EB8CC8D22BACAD90021FB4D /* SpinnerHandler.swift */,
+				6EB8CC8F22BACB030021FB4D /* ReachabilityHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		6EB8CC9122BACB190021FB4D /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				6E363C5B22C17617008083D6 /* GoogleService-Info.plist */,
+				6EB8CC6122BAC9D70021FB4D /* Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		6EB8CC9222BACB2F0021FB4D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6EB8CC5922BAC9D60021FB4D /* Traktor.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6EB8CC9322BACB410021FB4D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6E363C5D22C179CA008083D6 /* LaunchScreen.storyboard */,
+				6EB8CC9722BACEEF0021FB4D /* Developer.storyboard */,
+				6E363C5922C12F68008083D6 /* Main.storyboard */,
+				6E363C6122C1F05F008083D6 /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6EB8CC9422BACB620021FB4D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E5CE8E12381A6700097D06B /* Main */,
+				6E5CE8E02381A66B0097D06B /* Developer */,
+				6E5CE8DF2381A6640097D06B /* Login */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6ECC103222DE2F26004BB8F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6ECC103322DE2F3F004BB8F1 /* Show.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6EF097D222CD2E480057FFB4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6ECC102922D8EDD7004BB8F1 /* blank.png */,
+				6ECC102722D24BCE004BB8F1 /* no-image.png */,
+				6E3D74E122D0942D00FFAB5E /* TVCollage.png */,
+				6E4A917D22D08AF30057C406 /* Trakt.png */,
+				6EF097D322CD2E720057FFB4 /* blankProfile.png */,
+				6ECC103022DCDC74004BB8F1 /* StringImageGenerator.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		90A679F3AC49D6F28D6E4EBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C85FF6B806FFAAB27CE8909C /* Pods_Traktor.framework */,
+				0BFED5045249695FF21852C0 /* Pods_TraktorTests.framework */,
+				436FE549C29F798575DB30A7 /* Pods_TraktorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D470BBB457A5C3542474B6D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8E2923482DF0B8113D8D112 /* Pods-Traktor.debug.xcconfig */,
+				476B792D9FD754D6725C56A2 /* Pods-Traktor.release.xcconfig */,
+				462F629016DDC00D733588A2 /* Pods-TraktorTests.debug.xcconfig */,
+				6DCDBAB4D9E6B419096D1616 /* Pods-TraktorTests.release.xcconfig */,
+				4D47BDE2F882E19ACC218874 /* Pods-TraktorUITests.debug.xcconfig */,
+				BC38AED1CA25375E4ABDC3DF /* Pods-TraktorUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EB8CC4E22BAC9D60021FB4D /* Traktor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB8CC7A22BAC9D70021FB4D /* Build configuration list for PBXNativeTarget "Traktor" */;
+			buildPhases = (
+				5566878D80C36B9C7460362B /* [CP] Check Pods Manifest.lock */,
+				6EB8CC4B22BAC9D60021FB4D /* Sources */,
+				6EB8CC4C22BAC9D60021FB4D /* Frameworks */,
+				6EB8CC4D22BAC9D60021FB4D /* Resources */,
+				6EB8CCA522BAD6060021FB4D /* ShellScript */,
+				23EE0558B466D4E86569B2D4 /* [CP] Embed Pods Frameworks */,
+				0E1192664E3D658EB3CF663D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Traktor;
+			productName = Traktor;
+			productReference = 6EB8CC4F22BAC9D60021FB4D /* Traktor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EB8CC6522BAC9D70021FB4D /* TraktorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB8CC7D22BAC9D70021FB4D /* Build configuration list for PBXNativeTarget "TraktorTests" */;
+			buildPhases = (
+				1FF395E38DB52B89A2D47B67 /* [CP] Check Pods Manifest.lock */,
+				6EB8CC6222BAC9D70021FB4D /* Sources */,
+				6EB8CC6322BAC9D70021FB4D /* Frameworks */,
+				6EB8CC6422BAC9D70021FB4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EB8CC6822BAC9D70021FB4D /* PBXTargetDependency */,
+			);
+			name = TraktorTests;
+			productName = TraktorTests;
+			productReference = 6EB8CC6622BAC9D70021FB4D /* TraktorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EB8CC7022BAC9D70021FB4D /* TraktorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB8CC8022BAC9D70021FB4D /* Build configuration list for PBXNativeTarget "TraktorUITests" */;
+			buildPhases = (
+				652BA0BB914CD787ED1B6592 /* [CP] Check Pods Manifest.lock */,
+				6EB8CC6D22BAC9D70021FB4D /* Sources */,
+				6EB8CC6E22BAC9D70021FB4D /* Frameworks */,
+				6EB8CC6F22BAC9D70021FB4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EB8CC7322BAC9D70021FB4D /* PBXTargetDependency */,
+			);
+			name = TraktorUITests;
+			productName = TraktorUITests;
+			productReference = 6EB8CC7122BAC9D70021FB4D /* TraktorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EB8CC4722BAC9D60021FB4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Pablo;
+				TargetAttributes = {
+					6EB8CC4E22BAC9D60021FB4D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					6EB8CC6522BAC9D70021FB4D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6EB8CC4E22BAC9D60021FB4D;
+					};
+					6EB8CC7022BAC9D70021FB4D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6EB8CC4E22BAC9D60021FB4D;
+					};
+				};
+			};
+			buildConfigurationList = 6EB8CC4A22BAC9D60021FB4D /* Build configuration list for PBXProject "Traktor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EB8CC4622BAC9D60021FB4D;
+			productRefGroup = 6EB8CC5022BAC9D60021FB4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EB8CC4E22BAC9D60021FB4D /* Traktor */,
+				6EB8CC6522BAC9D70021FB4D /* TraktorTests */,
+				6EB8CC7022BAC9D70021FB4D /* TraktorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EB8CC4D22BAC9D60021FB4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF097D422CD2E720057FFB4 /* blankProfile.png in Resources */,
+				6EB8CC9822BACEEF0021FB4D /* Developer.storyboard in Resources */,
+				6E363C5C22C17617008083D6 /* GoogleService-Info.plist in Resources */,
+				6E363C6222C1F05F008083D6 /* Login.storyboard in Resources */,
+				6EB8CC5D22BAC9D70021FB4D /* Assets.xcassets in Resources */,
+				6E363C5E22C179CA008083D6 /* LaunchScreen.storyboard in Resources */,
+				6E3D74E222D0942D00FFAB5E /* TVCollage.png in Resources */,
+				6E4A917E22D08AF30057C406 /* Trakt.png in Resources */,
+				6ECC102A22D8EDD7004BB8F1 /* blank.png in Resources */,
+				6ECC102822D24BCE004BB8F1 /* no-image.png in Resources */,
+				6E363C5A22C12F68008083D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB8CC6422BAC9D70021FB4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB8CC6F22BAC9D70021FB4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E1192664E3D658EB3CF663D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Traktor/Pods-Traktor-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Traktor/Pods-Traktor-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Traktor/Pods-Traktor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FF395E38DB52B89A2D47B67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TraktorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23EE0558B466D4E86569B2D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Traktor/Pods-Traktor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Traktor/Pods-Traktor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Traktor/Pods-Traktor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5566878D80C36B9C7460362B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Traktor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		652BA0BB914CD787ED1B6592 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TraktorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EB8CCA522BAD6060021FB4D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EB8CC4B22BAC9D60021FB4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC3F54A22C7FF0D00764A97 /* ShowDetailsViewController.swift in Sources */,
+				6E5CE8DE238177930097D06B /* URLs.swift in Sources */,
+				6EB8CC9022BACB030021FB4D /* ReachabilityHandler.swift in Sources */,
+				6EB3F50E2378A56D0028A02A /* SeasonsCell.swift in Sources */,
+				6EB8CC9622BACED70021FB4D /* DeveloperSettingsViewController.swift in Sources */,
+				6ECC102F22DA41E3004BB8F1 /* MyShowsViewController.swift in Sources */,
+				6E363C5422C129B2008083D6 /* SettingsViewController.swift in Sources */,
+				6E363C5622C12A58008083D6 /* SearchResultsViewController.swift in Sources */,
+				6EB3F516237B3C7A0028A02A /* SeasonEpisodesTableViewController.swift in Sources */,
+				6EB3F514237B3C020028A02A /* episodeCell.swift in Sources */,
+				6EB8CC8822BACA8D0021FB4D /* AlertHandler.swift in Sources */,
+				6EB8CC8C22BACAC30021FB4D /* PresentViewControllerHandler.swift in Sources */,
+				6E363C5822C12E69008083D6 /* MainViewController.swift in Sources */,
+				6EB8CC5B22BAC9D60021FB4D /* Traktor.xcdatamodeld in Sources */,
+				6EB8CC8E22BACAD90021FB4D /* SpinnerHandler.swift in Sources */,
+				6EB8CC8A22BACAAA0021FB4D /* ShakeHandler.swift in Sources */,
+				6EB8CC5322BAC9D60021FB4D /* AppDelegate.swift in Sources */,
+				6E1DFBA72378A4C200721138 /* Strings.swift in Sources */,
+				6E363C6022C1EEEC008083D6 /* LoginViewController.swift in Sources */,
+				6ECC102D22DA0B5F004BB8F1 /* ShowTrailerViewController.swift in Sources */,
+				6E363C6622C420DD008083D6 /* ProfileViewController.swift in Sources */,
+				6EB3F5122378A6230028A02A /* ShowCell.swift in Sources */,
+				6E363C6422C28E00008083D6 /* ExploreViewController.swift in Sources */,
+				6ECC103122DCDC74004BB8F1 /* StringImageGenerator.swift in Sources */,
+				6ECC103422DE2F3F004BB8F1 /* Show.swift in Sources */,
+				6EB8CC8522BACA360021FB4D /* Logger.swift in Sources */,
+				6EB3F5102378A5DC0028A02A /* SearchCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB8CC6222BAC9D70021FB4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB8CC6B22BAC9D70021FB4D /* TraktorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB8CC6D22BAC9D70021FB4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB8CC7622BAC9D70021FB4D /* TraktorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EB8CC6822BAC9D70021FB4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EB8CC4E22BAC9D60021FB4D /* Traktor */;
+			targetProxy = 6EB8CC6722BAC9D70021FB4D /* PBXContainerItemProxy */;
+		};
+		6EB8CC7322BAC9D70021FB4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EB8CC4E22BAC9D60021FB4D /* Traktor */;
+			targetProxy = 6EB8CC7222BAC9D70021FB4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6EB8CC7822BAC9D70021FB4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6EB8CC7922BAC9D70021FB4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EB8CC7B22BAC9D70021FB4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E2923482DF0B8113D8D112 /* Pods-Traktor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 859ETGYW8H;
+				INFOPLIST_FILE = "$(SRCROOT)/Traktor/Plists/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pespinel.Traktor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6EB8CC7C22BAC9D70021FB4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 476B792D9FD754D6725C56A2 /* Pods-Traktor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 859ETGYW8H;
+				INFOPLIST_FILE = "$(SRCROOT)/Traktor/Plists/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pespinel.Traktor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6EB8CC7E22BAC9D70021FB4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 462F629016DDC00D733588A2 /* Pods-TraktorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 859ETGYW8H;
+				INFOPLIST_FILE = TraktorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pespinel.TraktorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Traktor.app/Traktor";
+			};
+			name = Debug;
+		};
+		6EB8CC7F22BAC9D70021FB4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DCDBAB4D9E6B419096D1616 /* Pods-TraktorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 859ETGYW8H;
+				INFOPLIST_FILE = TraktorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pespinel.TraktorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Traktor.app/Traktor";
+			};
+			name = Release;
+		};
+		6EB8CC8122BAC9D70021FB4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D47BDE2F882E19ACC218874 /* Pods-TraktorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 859ETGYW8H;
+				INFOPLIST_FILE = TraktorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pespinel.TraktorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Traktor;
+			};
+			name = Debug;
+		};
+		6EB8CC8222BAC9D70021FB4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC38AED1CA25375E4ABDC3DF /* Pods-TraktorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 859ETGYW8H;
+				INFOPLIST_FILE = TraktorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pespinel.TraktorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Traktor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EB8CC4A22BAC9D60021FB4D /* Build configuration list for PBXProject "Traktor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB8CC7822BAC9D70021FB4D /* Debug */,
+				6EB8CC7922BAC9D70021FB4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EB8CC7A22BAC9D70021FB4D /* Build configuration list for PBXNativeTarget "Traktor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB8CC7B22BAC9D70021FB4D /* Debug */,
+				6EB8CC7C22BAC9D70021FB4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EB8CC7D22BAC9D70021FB4D /* Build configuration list for PBXNativeTarget "TraktorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB8CC7E22BAC9D70021FB4D /* Debug */,
+				6EB8CC7F22BAC9D70021FB4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EB8CC8022BAC9D70021FB4D /* Build configuration list for PBXNativeTarget "TraktorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB8CC8122BAC9D70021FB4D /* Debug */,
+				6EB8CC8222BAC9D70021FB4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6EB8CC5922BAC9D60021FB4D /* Traktor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6EB8CC5A22BAC9D60021FB4D /* Traktor.xcdatamodel */,
+			);
+			currentVersion = 6EB8CC5A22BAC9D60021FB4D /* Traktor.xcdatamodel */;
+			path = Traktor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6EB8CC4722BAC9D60021FB4D /* Project object */;
+}

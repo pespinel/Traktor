@@ -1,0 +1,6 @@
+framework module Pods_TraktorUITests {
+  umbrella header "Pods-TraktorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

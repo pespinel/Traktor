@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jBe-mv-F9f">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="rka-Zn-RM7">
+            <objects>
+                <viewController storyboardIdentifier="Login" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="jBe-mv-F9f" customClass="LoginViewController" customModule="Traktor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l7k-T0-tKS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TVCollage.png" translatesAutoresizingMaskIntoConstraints="NO" id="72S-QT-A3k">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="539"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9F-He-Kl1">
+                                <rect key="frame" x="20" y="802" width="374" height="60"/>
+                                <color key="backgroundColor" red="0.93827372789382935" green="0.1581122875213623" blue="0.15716508030891418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5FU-BW-tft"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Sign in with Trakt">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="traktSignIn:" destination="jBe-mv-F9f" eventType="touchUpInside" id="wYt-ZU-Xz4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlU-xU-xpc">
+                                <rect key="frame" x="20" y="547" width="374" height="78"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="fwC-Cw-yy8"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Traktor">
+                                        <attributes>
+                                            <color key="NSColor" red="0.9451172947883606" green="0.18150931596755981" blue="0.17640438675880432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="30" name="AppleGothic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="systemGroupedBackgroundColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trakt.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zzw-81-YqH">
+                                <rect key="frame" x="20" y="633" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Axj-gy-egj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track your favourite TV shows!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3W-yZ-ewA">
+                                <rect key="frame" x="20" y="691" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="SaC-xS-02C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Zzw-81-YqH" firstAttribute="leading" secondItem="U3W-yZ-ewA" secondAttribute="leading" id="1vV-wf-Gfa"/>
+                            <constraint firstItem="tlU-xU-xpc" firstAttribute="leading" secondItem="l7k-T0-tKS" secondAttribute="leadingMargin" id="9t2-i1-R86"/>
+                            <constraint firstItem="tlU-xU-xpc" firstAttribute="trailing" secondItem="Zzw-81-YqH" secondAttribute="trailing" id="ArE-c9-vg6"/>
+                            <constraint firstItem="72S-QT-A3k" firstAttribute="leading" secondItem="2Z4-M8-Iw4" secondAttribute="leading" id="Emi-wk-NJJ"/>
+                            <constraint firstItem="Zzw-81-YqH" firstAttribute="trailing" secondItem="U3W-yZ-ewA" secondAttribute="trailing" id="Hfw-bU-gxf"/>
+                            <constraint firstItem="72S-QT-A3k" firstAttribute="centerX" secondItem="tlU-xU-xpc" secondAttribute="centerX" id="PEv-S0-g1q"/>
+                            <constraint firstItem="U3W-yZ-ewA" firstAttribute="leading" secondItem="S9F-He-Kl1" secondAttribute="leading" id="Rzt-nK-dQ2"/>
+                            <constraint firstItem="Zzw-81-YqH" firstAttribute="top" secondItem="tlU-xU-xpc" secondAttribute="bottom" constant="8" id="Z5y-gI-wLq"/>
+                            <constraint firstItem="S9F-He-Kl1" firstAttribute="bottom" secondItem="2Z4-M8-Iw4" secondAttribute="bottom" id="bQj-Tl-sfS"/>
+                            <constraint firstItem="U3W-yZ-ewA" firstAttribute="trailing" secondItem="S9F-He-Kl1" secondAttribute="trailing" id="bwv-ST-OiB"/>
+                            <constraint firstItem="tlU-xU-xpc" firstAttribute="top" secondItem="72S-QT-A3k" secondAttribute="bottom" constant="8" id="ePd-EF-eu1"/>
+                            <constraint firstItem="tlU-xU-xpc" firstAttribute="leading" secondItem="Zzw-81-YqH" secondAttribute="leading" id="gM6-PO-PLY"/>
+                            <constraint firstItem="S9F-He-Kl1" firstAttribute="top" secondItem="U3W-yZ-ewA" secondAttribute="bottom" constant="71" id="oMa-Fd-fOz"/>
+                            <constraint firstItem="72S-QT-A3k" firstAttribute="top" secondItem="l7k-T0-tKS" secondAttribute="topMargin" constant="-44" id="qYj-09-Wwn"/>
+                            <constraint firstItem="U3W-yZ-ewA" firstAttribute="top" secondItem="Zzw-81-YqH" secondAttribute="bottom" constant="8" id="uaJ-IY-2iK"/>
+                            <constraint firstItem="tlU-xU-xpc" firstAttribute="trailing" secondItem="l7k-T0-tKS" secondAttribute="trailingMargin" id="weV-83-PMv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Z4-M8-Iw4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sSu-KC-fgT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TVCollage.png" width="1844" height="2162"/>
+        <image name="Trakt.png" width="130" height="130"/>
+    </resources>
+</document>

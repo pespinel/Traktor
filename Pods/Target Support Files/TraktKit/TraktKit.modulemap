@@ -1,0 +1,6 @@
+framework module TraktKit {
+  umbrella header "TraktKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
